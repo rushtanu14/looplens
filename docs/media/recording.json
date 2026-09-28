@@ -1,0 +1,92 @@
+{
+  "app": "looplens",
+  "recordedAt": "2026-09-27T01:07:51.768Z",
+  "source": "http://127.0.0.1:4181",
+  "raw": "/Users/rushil/cprojects/Hackathons/looplens/docs/media/raw/page@eb90c409340349d58ec2bbc244d8b522.webm",
+  "trim": 1.845,
+  "duration": 105.144,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "scenes": [
+    {
+      "chapter": "01 / THE PROBLEM",
+      "caption": "A loop can look right and still stop one step too early.\nLoopLens makes each iteration visible.",
+      "start": 0.122,
+      "end": 8.123
+    },
+    {
+      "chapter": "02 / PREDICT",
+      "caption": "The original adds 0 through 4. The bound is 5,\nbut the condition is strictly less than 5.",
+      "start": 8.124,
+      "end": 16.126
+    },
+    {
+      "chapter": "02 / PREDICT",
+      "caption": "Try a prediction of 15 before revealing the answer.\nA wrong guess becomes a testable explanation.",
+      "start": 16.126,
+      "end": 24.127
+    },
+    {
+      "chapter": "03 / TRACE",
+      "caption": "Run the bounded simulator. It starts at total = 0;\nno arbitrary code or model is executed.",
+      "start": 24.127,
+      "end": 31.129
+    },
+    {
+      "chapter": "03 / TRACE",
+      "caption": "The first iteration visits i = 0. Adding zero\nleaves total unchanged, and the next i is 1.",
+      "start": 31.129,
+      "end": 39.131
+    },
+    {
+      "chapter": "03 / TRACE",
+      "caption": "Advance again: i = 1 changes total from 0 to 1.\nThe table and graph follow the same revealed rows.",
+      "start": 39.131,
+      "end": 47.133
+    },
+    {
+      "chapter": "04 / READ THE EVIDENCE",
+      "caption": "Finish the trace: five iterations produce 10.\nThe recorded prediction of 15 does not match.",
+      "start": 47.133,
+      "end": 55.135
+    },
+    {
+      "chapter": "05 / CHANGE ONE THING",
+      "caption": "The alternative includes the end bound with ≤.\nCompare the two versions to test that change.",
+      "start": 55.135,
+      "end": 63.137
+    },
+    {
+      "chapter": "05 / CHANGE ONE THING",
+      "caption": "The first difference is iteration 6: the original\nhas stopped, while the alternative visits 5.",
+      "start": 63.137,
+      "end": 71.138
+    },
+    {
+      "chapter": "06 / VERIFY THE REPAIR",
+      "caption": "Apply the inclusive boundary to the original,\nthen rerun the same prediction.",
+      "start": 71.138,
+      "end": 79.139
+    },
+    {
+      "chapter": "06 / VERIFY THE REPAIR",
+      "caption": "Now there are six iterations and the total is 15.\nThe new trace supports the original prediction.",
+      "start": 79.139,
+      "end": 87.141
+    },
+    {
+      "chapter": "07 / EXPORT",
+      "caption": "Both complete traces now match. Export a Markdown\nreceipt containing the loops, prediction and rows.",
+      "start": 87.141,
+      "end": 96.143
+    },
+    {
+      "chapter": "08 / TAKEAWAY",
+      "caption": "Predict → trace → change → verify. A local learning tool\nfor small integer loops, capped at 200 iterations.",
+      "start": 96.143,
+      "end": 105.144
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+1
+00:00:00,122 --> 00:00:08,123
+A loop can look right and still stop one step too early.
+LoopLens makes each iteration visible.
+
+2
+00:00:08,124 --> 00:00:16,126
+The original adds 0 through 4. The bound is 5,
+but the condition is strictly less than 5.
+
+3
+00:00:16,126 --> 00:00:24,127
+Try a prediction of 15 before revealing the answer.
+A wrong guess becomes a testable explanation.
+
+4
+00:00:24,127 --> 00:00:31,129
+Run the bounded simulator. It starts at total = 0;
+no arbitrary code or model is executed.
+
+5
+00:00:31,129 --> 00:00:39,131
+The first iteration visits i = 0. Adding zero
+leaves total unchanged, and the next i is 1.
+
+6
+00:00:39,131 --> 00:00:47,133
+Advance again: i = 1 changes total from 0 to 1.
+The table and graph follow the same revealed rows.
+
+7
+00:00:47,133 --> 00:00:55,135
+Finish the trace: five iterations produce 10.
+The recorded prediction of 15 does not match.
+
+8
+00:00:55,135 --> 00:01:03,137
+The alternative includes the end bound with ≤.
+Compare the two versions to test that change.
+
+9
+00:01:03,137 --> 00:01:11,138
+The first difference is iteration 6: the original
+has stopped, while the alternative visits 5.
+
+10
+00:01:11,138 --> 00:01:19,139
+Apply the inclusive boundary to the original,
+then rerun the same prediction.
+
+11
+00:01:19,139 --> 00:01:27,141
+Now there are six iterations and the total is 15.
+The new trace supports the original prediction.
+
+12
+00:01:27,141 --> 00:01:36,143
+Both complete traces now match. Export a Markdown
+receipt containing the loops, prediction and rows.
+
+13
+00:01:36,143 --> 00:01:45,144
+Predict → trace → change → verify. A local learning tool
+for small integer loops, capped at 200 iterations.

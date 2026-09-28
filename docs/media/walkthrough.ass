@@ -1,0 +1,53 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1440
+PlayResY: 1080
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Arial,29,&H00FFFFFF,&H00FFFFFF,&H00151C26,&H00151C26,0,0,0,0,100,100,0,0,1,0,0,2,70,70,29,1
+Style: Chapter,Arial,22,&H0056DCEC,&H0056DCEC,&H00151C26,&H00151C26,-1,0,0,0,100,100,0,0,1,0,0,7,34,34,16,1
+Style: Count,Arial,18,&H00FFFFFF,&H00FFFFFF,&H00151C26,&H00151C26,0,0,0,0,100,100,0,0,1,0,0,9,34,34,18,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.12,0:00:08.12,Caption,,0,0,0,,A loop can look right and still stop one step too early.\NLoopLens makes each iteration visible.
+Dialogue: 0,0:00:00.12,0:00:08.12,Chapter,,0,0,0,,LOOPLENS   ·   01 / THE PROBLEM
+Dialogue: 0,0:00:00.12,0:00:08.12,Count,,0,0,0,,01 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:00:08.12,0:00:16.12,Caption,,0,0,0,,The original adds 0 through 4. The bound is 5,\Nbut the condition is strictly less than 5.
+Dialogue: 0,0:00:08.12,0:00:16.12,Chapter,,0,0,0,,LOOPLENS   ·   02 / PREDICT
+Dialogue: 0,0:00:08.12,0:00:16.12,Count,,0,0,0,,02 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:00:16.12,0:00:24.12,Caption,,0,0,0,,Try a prediction of 15 before revealing the answer.\NA wrong guess becomes a testable explanation.
+Dialogue: 0,0:00:16.12,0:00:24.12,Chapter,,0,0,0,,LOOPLENS   ·   02 / PREDICT
+Dialogue: 0,0:00:16.12,0:00:24.12,Count,,0,0,0,,03 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:00:24.12,0:00:31.12,Caption,,0,0,0,,Run the bounded simulator. It starts at total = 0;\Nno arbitrary code or model is executed.
+Dialogue: 0,0:00:24.12,0:00:31.12,Chapter,,0,0,0,,LOOPLENS   ·   03 / TRACE
+Dialogue: 0,0:00:24.12,0:00:31.12,Count,,0,0,0,,04 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:00:31.12,0:00:39.13,Caption,,0,0,0,,The first iteration visits i = 0. Adding zero\Nleaves total unchanged, and the next i is 1.
+Dialogue: 0,0:00:31.12,0:00:39.13,Chapter,,0,0,0,,LOOPLENS   ·   03 / TRACE
+Dialogue: 0,0:00:31.12,0:00:39.13,Count,,0,0,0,,05 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:00:39.13,0:00:47.13,Caption,,0,0,0,,Advance again: i = 1 changes total from 0 to 1.\NThe table and graph follow the same revealed rows.
+Dialogue: 0,0:00:39.13,0:00:47.13,Chapter,,0,0,0,,LOOPLENS   ·   03 / TRACE
+Dialogue: 0,0:00:39.13,0:00:47.13,Count,,0,0,0,,06 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:00:47.13,0:00:55.13,Caption,,0,0,0,,Finish the trace: five iterations produce 10.\NThe recorded prediction of 15 does not match.
+Dialogue: 0,0:00:47.13,0:00:55.13,Chapter,,0,0,0,,LOOPLENS   ·   04 / READ THE EVIDENCE
+Dialogue: 0,0:00:47.13,0:00:55.13,Count,,0,0,0,,07 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:00:55.13,0:01:03.13,Caption,,0,0,0,,The alternative includes the end bound with ≤.\NCompare the two versions to test that change.
+Dialogue: 0,0:00:55.13,0:01:03.13,Chapter,,0,0,0,,LOOPLENS   ·   05 / CHANGE ONE THING
+Dialogue: 0,0:00:55.13,0:01:03.13,Count,,0,0,0,,08 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:01:03.13,0:01:11.13,Caption,,0,0,0,,The first difference is iteration 6: the original\Nhas stopped, while the alternative visits 5.
+Dialogue: 0,0:01:03.13,0:01:11.13,Chapter,,0,0,0,,LOOPLENS   ·   05 / CHANGE ONE THING
+Dialogue: 0,0:01:03.13,0:01:11.13,Count,,0,0,0,,09 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:01:11.13,0:01:19.13,Caption,,0,0,0,,Apply the inclusive boundary to the original,\Nthen rerun the same prediction.
+Dialogue: 0,0:01:11.13,0:01:19.13,Chapter,,0,0,0,,LOOPLENS   ·   06 / VERIFY THE REPAIR
+Dialogue: 0,0:01:11.13,0:01:19.13,Count,,0,0,0,,10 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:01:19.13,0:01:27.14,Caption,,0,0,0,,Now there are six iterations and the total is 15.\NThe new trace supports the original prediction.
+Dialogue: 0,0:01:19.13,0:01:27.14,Chapter,,0,0,0,,LOOPLENS   ·   06 / VERIFY THE REPAIR
+Dialogue: 0,0:01:19.13,0:01:27.14,Count,,0,0,0,,11 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:01:27.14,0:01:36.14,Caption,,0,0,0,,Both complete traces now match. Export a Markdown\Nreceipt containing the loops, prediction and rows.
+Dialogue: 0,0:01:27.14,0:01:36.14,Chapter,,0,0,0,,LOOPLENS   ·   07 / EXPORT
+Dialogue: 0,0:01:27.14,0:01:36.14,Count,,0,0,0,,12 / 13  |  SOUND-OFF DEMO
+Dialogue: 0,0:01:36.14,0:01:45.14,Caption,,0,0,0,,Predict → trace → change → verify. A local learning tool\Nfor small integer loops, capped at 200 iterations.
+Dialogue: 0,0:01:36.14,0:01:45.14,Chapter,,0,0,0,,LOOPLENS   ·   08 / TAKEAWAY
+Dialogue: 0,0:01:36.14,0:01:45.14,Count,,0,0,0,,13 / 13  |  SOUND-OFF DEMO
